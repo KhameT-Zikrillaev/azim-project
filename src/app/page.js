@@ -12,60 +12,63 @@ export default function Page() {
         priority
         className="fixed inset-0 w-full h-full object-cover z-[0]"
       />
-      <div className="max-w-md mx-auto space-y-6 py-4 ">
+    
+      
+      <div className="max-w-md mx-auto space-y-6 py-4 relative z-[2]">
         {/* Logo */}
-        
-        <div className="text-center mb-4 glass-effect p-8 rounded-2xl">
-          <h1 className="text-4xl pt-16 font-bold mb-3 bg-gradient-to-r from-white via-gray-200 to-gray-400 text-transparent bg-clip-text">
-            REEBOK
+        <div className="text-center mb-4 glass-effect p-4 rounded-2xl logo-container relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent"></div>
+          <h1 className="text-5xl pt-8 font-bold mb-2 text-gray-300 relative z-10 shine-line-text">
+            AutoCosmos
           </h1>
-          <Image
-          src="/logo.png"
-          alt=""
-          layout="fill"
-          className=" relative z-[-1] w-full h-full object-contain"
-        />
-        
+          <div className="relative z-0">
+            <Image
+              src="/logo.png"
+              alt=""
+              width={200}
+              height={200}
+              className="logo-image mx-auto"
+            />
+          </div>
         </div>
 
         {/* Services Section */}
         <div className="space-y-4 relative z-10">
           {/* Tinting Service */}
-          <div className="glass-effect p-6 rounded-2xl hover:bg-white/10 transition-all">
+          <div className="service-card p-6">
             <div className="flex items-center gap-4 mb-3">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-white/80" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
               </svg>
-              <h2 className="text-2xl font-semibold">Тонировка</h2>
+              <h2 className="text-2xl text-clip">Тонировка</h2>
             </div>
-            <p className="text-white/70">Профессиональная тонировка стекол с гарантией качества</p>
+            <p className="text-white/70 text-clip">Профессиональная тонировка стекол с гарантией качества</p>
           </div>
 
           {/* Soundproofing Service */}
-          <div className="glass-effect p-6 rounded-2xl hover:bg-white/10 transition-all">
+          <div className="service-card p-6">
             <div className="flex items-center gap-4 mb-3">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-white/80" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
               </svg>
-              <h2 className="text-2xl font-semibold">Шумоизоляция</h2>
+              <h2 className="text-2xl text-clip">Шумоизоляция</h2>
             </div>
-            <p className="text-white/70">Качественная шумоизоляция для комфортной езды</p>
+            <p className="text-white/70 text-clip">Качественная шумоизоляция для комфортной езды</p>
           </div>
 
           {/* Additional Tuning Services */}
-          <div className="glass-effect p-6 rounded-2xl hover:bg-white/10 transition-all">
+          <div className="service-card p-6">
             <div className="flex items-center gap-4 mb-3">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-white/80" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
               </svg>
-              <h2 className="text-2xl font-semibold">Тюнинг</h2>
+              <h2 className="text-2xl text-clip">Тюнинг</h2>
             </div>
-            <ul className="space-y-2 text-white/70">
-              <li>• Установка спортивного выхлопа</li>
-              <li>• Модификация подвески</li>
-              <li>• Стайлинг экстерьера</li>
-              <li>• Чип-тюнинг</li>
-              <li>• Установка обвесов</li>
+            <ul className="space-y-2 text-white/70 text-clip">
+              <li>• Ламинация</li>
+              <li>• Уст.Чехлов и ковриков</li>
+              <li>• Химчистка</li>
+              <li>• Табло тюнинга</li>
             </ul>
           </div>
         </div>
@@ -145,13 +148,13 @@ export default function Page() {
 
         {/* Working Hours */}
         <div className="text-center text-gray-400 mt-8 relative z-10">
-          <p>Время работы: 18:00 - 22:00</p>
+          <p>Время работы: 10:00 - 22:00</p>
           <p>Выходной: отдыхаем 7/1</p>
         </div>
 
         {/* Company Info */}
         <div className="text-center text-gray-400 mt-4 relative z-10">
-          <p> 2025 REEBOK. </p>
+          <p> 2025 AutoCosmos. </p>
         </div>
 
       </div>
