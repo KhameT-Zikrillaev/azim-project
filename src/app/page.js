@@ -27,11 +27,18 @@ export default function Page() {
               alt=""
               width={200}
               height={200}
-              className="logo-image mx-auto"
+              className="logo-image w-[120px] h-[120px] md:w-[200px] md:h-[200px] mx-auto"
             />
           </div>
         </div>
 
+
+        <div className="leng flex justify-center items-center gap-4">
+         <button className="text-2xl">🇺🇿</button>
+         <button className="text-2xl">🇷🇺</button>
+         <button className="text-2xl">🇬🇧</button>
+         </div>
+         
         {/* Services Section */}
         <div className="space-y-2 relative z-10">
           {/* Tinting Service */}

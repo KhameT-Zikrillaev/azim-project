@@ -1,0 +1,22 @@
+{
+  "AutoCosmos": "AutoCosmos",
+  "tuning": "Tuning",
+  "services": {
+    "tinting": "Tonirovka",
+    "soundproofing": "Shovqinsizlantirish",
+    "lamination": "Laminatsiya",
+    "seatCovers": "O'rindiq g'iloflari va gilamlar",
+    "dryCleaning": "Kimyoviy tozalash",
+    "dashboardTuning": "Panel tuning"
+  },
+  "contactUs": "Biz bilan bog'lanish",
+  "callUs": "Bizga qo'ng'iroq qiling",
+  "telegram": "Telegram",
+  "instagram": "Instagram",
+  "address": "Manzil",
+  "googleMaps": "Google Xaritalar",
+  "yandexMaps": "Yandex Xaritalar",
+  "workingHours": "Ish vaqti: 10:00 - 22:00",
+  "dayOff": "Dam olish kuni: 7/1 dam olamiz",
+  "companyInfo": "2025 AutoCosmos."
+}

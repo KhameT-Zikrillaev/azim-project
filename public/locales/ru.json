@@ -1,0 +1,23 @@
+{
+    "AutoCosmos": "AutoCosmos",
+    "tuning": "Тюнинг",
+    "services": {
+      "tinting": "Тонировка",
+      "soundproofing": "Шумоизоляция",
+      "lamination": "Ламинирование",
+      "seatCovers": "Чехлы для сидений и коврики",
+      "dryCleaning": "Химчистка",
+      "dashboardTuning": "Тюнинг панели"
+    },
+    "contactUs": "Свяжитесь с нами",
+    "callUs": "Позвоните нам",
+    "telegram": "Телеграм",
+    "instagram": "Инстаграм",
+    "address": "Адрес",
+    "googleMaps": "Google Карты",
+    "yandexMaps": "Яндекс Карты",
+    "workingHours": "Рабочее время: 10:00 - 22:00",
+    "dayOff": "Выходной день: 7/1 отдыхаем",
+    "companyInfo": "2025 AutoCosmos."
+  }
+  
