@@ -67,7 +67,7 @@ export default function Page() {
                {/* ~~~~~~~~~~~~~~~~~~~~button~~~~~~~~~~~~~~~~~~~ */}
              <div className="service-card  p-2 md:p-4">
             <div className="flex items-center gap-4  justify-center">
-             <button className="group bg-white/10 relative z-10 cursor-pointer px-6 py-3 rounded-lg text-white hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
+             <a href="#contact"  className="group bg-white/10 relative z-10 cursor-pointer px-6 py-3 rounded-lg text-white hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
                <span>Связаться с нами</span>
                <svg 
                  xmlns="http://www.w3.org/2000/svg" 
@@ -83,15 +83,15 @@ export default function Page() {
                    d="M19 14l-7 7m0 0l-7-7m7 7V3" 
                  />
                </svg>
-             </button>
+             </a>
             </div>
           </div>
 
         </div>
 
         {/* Contact Links */}
-        <div className="contact-container flex flex-col gap-4">
-        <Link href="tel:+998990000096" 
+        <div id="contact" className="contact-container flex flex-col gap-4">
+        <Link href="tel:+998946470121" 
           className="link-item flex items-center gap-4 p-5 rounded-xl group hover:bg-white/10 transition-colors relative overflow-hidden">
           <div className="absolute left-0 top-0 h-full w-1 bg-white animate-line"></div>
           <div className="w-10 h-10 flex items-center justify-center">
@@ -101,7 +101,7 @@ export default function Page() {
           </div>
           <div>
             <div className="font-medium text-lg group-hover:text-white transition-colors">Позвонить нам</div>
-            <div className="text-white/60 group-hover:text-white/80 transition-colors">+998 99 000 00 96</div>
+            <div className="text-white/60 group-hover:text-white/80 transition-colors">+998 94 647 01 21</div>
           </div>
         </Link>
 
@@ -133,22 +133,7 @@ export default function Page() {
           </div>
         </Link>
 
-        <Link href="https://yandex.com/maps/-/CDe5rS9y" 
-          className="link-item flex items-center gap-4 p-5 rounded-xl group hover:bg-white/10 transition-colors relative overflow-hidden">
-          <div className="absolute left-0 top-0 h-full w-1 bg-white animate-line"></div>
-          <div className="w-10 h-10 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-white/80 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-            </svg>
-          </div>
-          <div>
-            <div className="font-medium text-lg group-hover:text-white transition-colors">Адрес</div>
-            <div className="text-white/60 group-hover:text-white/80 transition-colors">Yandex Maps</div>
-          </div>
-        </Link>
-
-        <Link href="https://maps.google.com/?q=Salvatini" 
+        <Link href="https://maps.app.goo.gl/fgWr3PkTJKiwZnMo7" 
           className="link-item flex items-center gap-4 p-5 rounded-xl group hover:bg-white/10 transition-colors relative overflow-hidden">
           <div className="absolute left-0 top-0 h-full w-1 bg-white animate-line"></div>
           <div className="w-10 h-10 flex items-center justify-center">
