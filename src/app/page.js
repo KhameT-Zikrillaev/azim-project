@@ -18,7 +18,7 @@ export default function Page() {
         {/* Logo */}
         <div className="text-center mb-2 glass-effect p-2 rounded-2xl logo-container relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent"></div>
-          <h1 className=" text-3xl  md:text-5xl pt-4  md:pt-8 font-bold mb-2 text-gray-300 relative z-10 shine-line-text">
+          <h1 className="text-3xl md:text-5xl pt-3 md:pt-6 font-bold mb-2 text-gray-300 relative z-10 shine-line-text">
             AutoCosmos
           </h1>
           <div className="relative z-0">
@@ -27,17 +27,10 @@ export default function Page() {
               alt=""
               width={200}
               height={200}
-              className="logo-image w-[120px] h-[120px] md:w-[200px] md:h-[200px] mx-auto"
+              className="logo-image w-[70px] h-[70px] md:w-[160px] md:h-[160px] mx-auto"
             />
           </div>
         </div>
-
-
-        <div className="leng flex justify-center items-center gap-4">
-         <button className="text-2xl">🇺🇿</button>
-         <button className="text-2xl">🇷🇺</button>
-         <button className="text-2xl">🇬🇧</button>
-         </div>
          
         {/* Services Section */}
         <div className="space-y-2 relative z-10">
@@ -45,25 +38,61 @@ export default function Page() {
           
 
           {/* Additional Tuning Services */}
-          <div className="service-card p-6">
-            <div className="flex items-center justify-center mb-3">
-              <svg xmlns="http://www.w3.org/2000/svg" className=" w-8 h-8 md:w-10 md:h-10 text-white/80" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
-              </svg> 
-              <h2 className="text-lg md:text-2xl  text-clip">Тюнинг</h2>
-            </div>
-             <div className="flex items-center justify-center">
-            <ul className="space-y-2 text-white/70  text-lg md:text-2xl  text-clip">
-              <li>• Тонировка</li>
-              <li>• Шумоизоляция</li>
-              <li>• Ламинация</li>
-              <li>• Уст.Чехлов и ковриков</li>
-              <li>• Химчистка</li>
-              <li>• Табло тюнинга</li>
-            </ul>
-            </div>
-          </div>
-
+          <div className="service-card p-6 backdrop-blur-md">
+  <div className="flex items-center justify-center mb-5 relative">
+    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-50 rounded-full blur-md"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 md:w-10 md:h-10 text-white/90 animate-pulse" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+    </svg> 
+    <h2 className="text-xl md:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-300 to-white animate-pulse ml-2">Xizmatlar</h2>
+  </div>
+  <div className="flex items-center justify-center">
+    <ul className="space-y-4 text-white/90 text-lg md:text-2xl list-none">
+      <li className="flex items-center group transition-all duration-300 hover:translate-x-2">
+        <span className="flex items-center justify-center w-10 h-10 mr-4 rounded-full bg-gradient-to-br from-yellow-500/20 to-orange-500/20 group-hover:from-yellow-500/50 group-hover:to-orange-500/50 transition-all duration-300">
+          <span className="text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300">★</span>
+        </span> 
+        <span className="group-hover:text-white transition-colors duration-300">Tanirovka</span>
+      </li>
+      <li className="flex items-center group transition-all duration-300 hover:translate-x-2">
+        <span className="flex items-center justify-center w-10 h-10 mr-4 rounded-full bg-gradient-to-br from-yellow-500/20 to-orange-500/20 group-hover:from-yellow-500/50 group-hover:to-orange-500/50 transition-all duration-300">
+          <span className="text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300">★</span>
+        </span> 
+        <span className="group-hover:text-white transition-colors duration-300">Rangli Qoplamalar</span>
+      </li>
+      <li className="flex items-center group transition-all duration-300 hover:translate-x-2">
+        <span className="flex items-center justify-center w-10 h-10 mr-4 rounded-full bg-gradient-to-br from-yellow-500/20 to-orange-500/20 group-hover:from-yellow-500/50 group-hover:to-orange-500/50 transition-all duration-300">
+          <span className="text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300">★</span>
+        </span> 
+        <span className="group-hover:text-white transition-colors duration-300">Akvaprint</span>
+      </li>
+      <li className="flex items-center group transition-all duration-300 hover:translate-x-2">
+        <span className="flex items-center justify-center w-10 h-10 mr-4 rounded-full bg-gradient-to-br from-yellow-500/20 to-orange-500/20 group-hover:from-yellow-500/50 group-hover:to-orange-500/50 transition-all duration-300">
+          <span className="text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300">★</span>
+        </span> 
+        <span className="group-hover:text-white transition-colors duration-300">Branirovka Kuzov</span>
+      </li>
+      <li className="flex items-center group transition-all duration-300 hover:translate-x-2">
+        <span className="flex items-center justify-center w-10 h-10 mr-4 rounded-full bg-gradient-to-br from-yellow-500/20 to-orange-500/20 group-hover:from-yellow-500/50 group-hover:to-orange-500/50 transition-all duration-300">
+          <span className="text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300">★</span>
+        </span> 
+        <span className="group-hover:text-white transition-colors duration-300">Chexol Polik</span>
+      </li>
+      <li className="flex items-center group transition-all duration-300 hover:translate-x-2">
+        <span className="flex items-center justify-center w-10 h-10 mr-4 rounded-full bg-gradient-to-br from-yellow-500/20 to-orange-500/20 group-hover:from-yellow-500/50 group-hover:to-orange-500/50 transition-all duration-300">
+          <span className="text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300">★</span>
+        </span> 
+        <span className="group-hover:text-white transition-colors duration-300">Shumo Izolyatsiya</span>
+      </li>
+      <li className="flex items-center group transition-all duration-300 hover:translate-x-2">
+        <span className="flex items-center justify-center w-10 h-10 mr-4 rounded-full bg-gradient-to-br from-yellow-500/20 to-orange-500/20 group-hover:from-yellow-500/50 group-hover:to-orange-500/50 transition-all duration-300">
+          <span className="text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300">★</span>
+        </span> 
+        <span className="group-hover:text-white transition-colors duration-300">Keramika</span>
+      </li>
+    </ul>
+  </div>
+</div>
                {/* ~~~~~~~~~~~~~~~~~~~~button~~~~~~~~~~~~~~~~~~~ */}
              <div className="service-card  p-2 md:p-4">
             <div className="flex items-center gap-4  justify-center">
